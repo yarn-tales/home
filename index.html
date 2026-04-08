@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarn Tales | حكايات الغزل</title>
+    <meta name="description" content="Yarn Tales - معرض وموقع لبيع منتجات الكروشيه والأعمال اليدوية بتصاميم عصرية.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Cairo:wght@400;600;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <span class="brand-name">Yarn Tales</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#gallery">المعرض</a>
+                <a href="#order">طلب منتج</a>
+            </nav>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="fade-in-up">Yarn Tales</h1>
+                <p class="subtitle fade-in-up delay-1">The crochet corner</p>
+                <h2 class="arabic-title fade-in-up delay-2">كل غرزة تحكي قصة بحب</h2>
+                <p class="hero-desc fade-in-up delay-3">نقدم لك أعمال كروشيه يدوية صنعت بشغف واهتمام لتناسب ذوقك الرفيع. تصفح معرضنا واطلب تصميمك الخاص اليوم.</p>
+                <div class="hero-buttons fade-in-up delay-4">
+                    <a href="#gallery" class="btn btn-primary">تصفح المعرض</a>
+                    <a href="#order" class="btn btn-secondary">اطلب الآن</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper fade-in">
+                <!-- Using high quality image instead of low res logo -->
+                <img src="image/624747477_17888360421423572_7118880080916069051_n.jpg" alt="Yarn Tales" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>معرض منتجاتنا</h2>
+                <div class="divider"></div>
+                <p>تصفح أحدث تصاميمنا وأعمالنا اليدوية</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- User can replace image src with assets/img1.jpg etc. -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/649232768_1447584893475683_9192799690237314298_n.jpg" alt="عروسة كروشيه">
+                    <div class="item-overlay">
+                        <h3>عروسة كروشيه</h3>
+                        <p>تصميم لطيف وهدية مثالية</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/653408764_17894617965423572_5164269156705367181_n.jpg" alt="شال كروشيه">
+                    <div class="item-overlay">
+                        <h3>كوفية شتوية</h3>
+                        <p>ألوان دافئة وناعمة</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/615842923_17886447222423572_5267515197775789760_n.jpg" alt="كارديجان كروشيه">
+                    <div class="item-overlay">
+                        <h3>سلة ديكور</h3>
+                        <p>مساحة تخزين أنيقة</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/573109331_17878650972423572_6125431866260670739_n.jpg" alt="أعمال متنوعة">
+                    <div class="item-overlay">
+                        <h3>ميداليات</h3>
+                        <p>إضافة مميزة لمفاتيحك</p>
+                    </div>
+                </div>
+
+                <!-- Graduation Girl -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/624844861_18077326619459857_9176906058294635319_n.jpg" alt="خريجة كروشيه">
+                    <div class="item-overlay">
+                        <h3>عروسة التخرج</h3>
+                        <p>هدية تخرج مميزة بتفاصيل جميلة</p>
+                    </div>
+                </div>
+
+                <!-- Moon & Star Keychains -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/627466551_18189825178355711_170006989310424020_n.jpg" alt="ميدالية النجوم">
+                    <div class="item-overlay">
+                        <h3>هلال ونجمة</h3>
+                        <p>ميداليات لطيفة وبسيطة</p>
+                    </div>
+                </div>
+
+                <!-- New Hello Kitty -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/621751772_17907564696325085_3938814534891996209_n.jpg" alt="ميدالية هيلو كيتي">
+                    <div class="item-overlay">
+                        <h3>ميدالية هيلو كيتي</h3>
+                        <p>تصميم كلاسيكي جميل لمفاتيحك</p>
+                    </div>
+                </div>
+
+                <!-- New Bellflower -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/553234300_17874239163423572_5876598181427336619_n.heic.jpeg" alt="ميدالية زهور الجرس">
+                    <div class="item-overlay">
+                        <h3>ميدالية زهور الجرس</h3>
+                        <p>إضافة رقيقة وأنيقة لحقيبتك</p>
+                    </div>
+                </div>
+
+                <!-- New Watermelon -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/554531468_17874239154423572_5155033817307989017_n.heic.jpeg" alt="ميدالية بطيخ">
+                    <div class="item-overlay">
+                        <h3>ميدالية بطيخ</h3>
+                        <p>تصميم صيفي منعش ومميز</p>
+                    </div>
+                </div>
+
+                <!-- New Flowers -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/553261518_17874239127423572_4782409347789045168_n.heic.jpeg" alt="ميدالية زهور">
+                    <div class="item-overlay">
+                        <h3>ميدالية زهور</h3>
+                        <p>ألوان زاهية ومبهجة لحقيبتك</p>
+                    </div>
+                </div>
+
+                <!-- Blue Flowers -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/553395574_17874239136423572_5722003174013739678_n.heic.jpeg" alt="ميدالية زهور زرقاء">
+                    <div class="item-overlay">
+                        <h3>زهور زرقاء</h3>
+                        <p>ميدالية بتصميم زهور رقيق</p>
+                    </div>
+                </div>
+
+                <!-- Cat Amigurumi -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/480220173_1267878140979443_3271940644239219288_n.heic.jpeg" alt="قطط الكروشيه">
+                    <div class="item-overlay">
+                        <h3>قطط أميجورومي</h3>
+                        <p>شخصيات لطيفة وملونة</p>
+                    </div>
+                </div>
+
+                <!-- Book Cover -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/624747477_17888360421423572_7118880080916069051_n.jpg" alt="غلاف كتاب">
+                    <div class="item-overlay">
+                        <h3>غلاف كتاب كروشيه</h3>
+                        <p>حماية راقية لكتبك المفضلة</p>
+                    </div>
+                </div>
+
+                <!-- Bag -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/656015985_18164869420410967_3771698670994144417_n.jpg" alt="حقيبة كروشيه">
+                    <div class="item-overlay">
+                        <h3>حقيبة كروشيه</h3>
+                        <p>أناقة وتميز في كل الخروجات</p>
+                    </div>
+                </div>
+                
+                <!-- Handcraft 2 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/633026480_1579852226596817_706955331521849191_n.jpg" alt="عمل فني">
+                    <div class="item-overlay">
+                        <h3>عمل إبداعي</h3>
+                        <p>إضافة رائعة لتفاصيلك</p>
+                    </div>
+                </div>
+
+                <!-- Handcraft 3 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/650913112_17893867281423572_7216945558180243797_n.jpg" alt="عمل فني">
+                    <div class="item-overlay">
+                        <h3>قطعة فريدة</h3>
+                        <p>تناسب جميع الأذواق</p>
+                    </div>
+                </div>
+
+                <!-- Handcraft 4 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/651412633_17894445747423572_2555641317684790737_n.jpg" alt="عمل فني">
+                    <div class="item-overlay">
+                        <h3>تصميم أنيق</h3>
+                        <p>لمسة جمالية رائعة</p>
+                    </div>
+                </div>
+
+                <!-- Handcraft 5 -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/651456290_17894445726423572_1497524723237302344_n.jpg" alt="عمل فني">
+                    <div class="item-overlay">
+                        <h3>زينة لطيفة</h3>
+                        <p>تناسب كل الأوقات</p>
+                    </div>
+                </div>
+
+                <!-- Cute Purses -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/656874316_18061976855459281_388379074951169254_n.jpg" alt="محافظ كروشيه لطيفة">
+                    <div class="item-overlay">
+                        <h3>محافظ كروشيه صغيرة</h3>
+                        <p>تصميم دبدوب وقطة لحفظ أشيائك الصغيرة</p>
+                    </div>
+                </div>
+
+                <!-- Sweater -->
+                <div class="gallery-item" onclick="openModal(this)">
+                    <img src="image/564618281_122153979338784246_3353382886761771812_n.jpg" alt="سترة صوفية بالزهور">
+                    <div class="item-overlay">
+                        <h3>سترة صوفية</h3>
+                        <p>تصميم برتقالي فريد بتفاصيل الزهور وشرائح الفواكه</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <div class="order-wrapper">
+                <div class="order-info">
+                    <h2>اطلب تصميمك المفضل</h2>
+                    <p>الآن يمكنك طلب أي منتج من المعرض أو طلب تصميم خاص بك. املأ النموذج وسنتواصل معك في أقرب وقت عبر البريد الإلكتروني.</p>
+                    <ul class="features-list">
+                        <li><span class="icon">✨</span> جودة عالية وخامات ممتازة</li>
+                        <li><span class="icon">🧵</span> الاهتمام بأدق التفاصيل</li>
+                        <li><span class="icon">🎨</span> إمكانية اختيار الألوان المفضلة</li>
+                    </ul>
+                </div>
+                
+                <div class="order-form-container">
+                    <!-- Form endpoint configured to send to s2yedftouh@gmail.com -->
+                    <form id="orderForm" action="https://formsubmit.co/ajax/s2yedftouh@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required placeholder="أدخل اسمك">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="_replyto" required placeholder="example@mail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف (اختياري)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم الهاتف للتواصل السريع">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product">المنتج المطلوب</label>
+                            <select id="product" name="product" required>
+                                <option value="" disabled selected>اختر منتجاً...</option>
+                                <option value="amigurumi">عروسة أميجورومي</option>
+                                <option value="scarf">كوفية أو شال</option>
+                                <option value="basket">سلة / ديكور</option>
+                                <option value="custom">تصميم خاص بالطلب</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">الرسالة / التفاصيل</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="اذكر الألوان أو أي تفاصيل أخرى ترغب بها..."></textarea>
+                        </div>
+                        
+                        <!-- Formspree Subject -->
+                        <input type="hidden" name="_subject" value="طلب جديد من موقع Yarn Tales!">
+                        <!-- Redirect after submission (leave empty or link to github io) -->
+                        <input type="hidden" name="_next" value="#success">
+                        
+                        <button type="submit" class="btn btn-primary btn-block">إرسال الطلب</button>
+                    </form>
+                    <div id="formStatus" class="form-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="brand-name">Yarn Tales</h3>
+                <p>The crochet corner - كل غرزة تخيط بحب من أجلك.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yarn.taless/" target="_blank" aria-label="إنستجرام">Instagram</a>
+                    <a href="https://www.facebook.com/people/Yarn-Tales/61573527387742/" target="_blank" aria-label="فيسبوك">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Yarn.Taless. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
